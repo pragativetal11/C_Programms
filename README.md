@@ -1,2 +1,2 @@
 # C_Programms
-Basic to advanced C programming practice programs
+Collection of C programs covering programming fundamentals, data structures, algorithms, and problem-solving exercises.
