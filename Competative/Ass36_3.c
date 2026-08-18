@@ -1,5 +1,5 @@
 /*
-    check whether 1st and 32th(first and last bit) and 9th bit is on
+    accept number and toggle 7th bits.return modified number.
 */
 
 #include<stdio.h>

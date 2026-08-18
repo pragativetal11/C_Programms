@@ -11,7 +11,7 @@ typedef unsigned int UINT;
 #define TRUE 1
 #define FALSE 0
 
-UINT ChkBit(UINT iNo, UINT iPos)
+UINT OffBit(UINT iNo, UINT iPos)
 {
     if((iPos < 1) || (iPos > 32))
     {
@@ -42,7 +42,7 @@ int main()
     printf("Enter Location :\n");
     scanf("%u",&iLocation);
 
-    iRet = ChkBit(iValue, iLocation);
+    iRet = OffBit(iValue, iLocation);
     printf("MOdified Number is: %u\n",iRet);
 
     return 0;

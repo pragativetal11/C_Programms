@@ -1,6 +1,5 @@
 /*
-    accept number and position and and off that bit
-
+    accept number and position and turn ON that bit
 */
 
 #include<stdio.h>
