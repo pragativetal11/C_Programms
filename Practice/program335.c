@@ -1,0 +1,41 @@
+/*
+    Accept number from user and accept position and toggle position (in separate function with applying filter)
+*/
+
+#include<stdio.h>
+
+typedef unsigned int UINT;
+
+UINT ToggleBit(UINT iNo, UINT iPos)
+{
+    UINT iMask = 0x1;
+    UINT iResult = 0;
+
+    if(iPos < 1 || iPos > 32)
+    {
+        printf("Invalid bit Position\n");
+        return iNo;                     //Return number because number is unsigned that is positive
+    }
+    iMask = iMask << (iPos - 1);
+    
+    iResult = iNo ^ iMask;
+
+    return iResult;
+
+}
+
+int main()
+{
+    UINT iValue = 0, iRet = 0, iLocation = 0;
+
+    printf("Enter number : \n");
+    scanf("%d",&iValue);
+
+    printf("Enter the bit position :\n");
+    scanf("%d",&iLocation);
+
+    iRet = ToggleBit(iValue, iLocation);
+    printf("Updated Number is : %d\n", iRet);
+
+    return 0;
+}
